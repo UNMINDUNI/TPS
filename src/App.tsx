@@ -474,7 +474,7 @@ export default function App() {
         </div>
 
         <h2 className="font-serif text-3xl md:text-4xl text-brand-cream font-light mb-8">
-          {lang === 'ko' ? '사밀한 역사 속 방관자와 희생자들 (NPC)' : 'The Bystanders & Sacrifices of Sevenoaks'}
+          {lang === 'ko' ? '주변 인물 NPC' : 'The Bystanders & Sacrifices of Sevenoaks'}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -513,7 +513,7 @@ export default function App() {
 
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
           <h2 className="font-serif text-3xl md:text-4xl text-brand-cream font-light">
-            {lang === 'ko' ? '침묵과 비극의 대역사 (2008 – 2026)' : 'The Chronicle of Sealed Vows'}
+            {lang === 'ko' ? '히스토리 (2008 – 2026)' : 'The Chronicle of Sealed Vows'}
           </h2>
 
           {/* Timeline Category Filters */}
