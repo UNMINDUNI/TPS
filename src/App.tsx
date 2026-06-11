@@ -122,7 +122,7 @@ export default function App() {
         </div>
         
         <h2 className="font-serif text-3xl md:text-4xl text-brand-cream font-light mb-8">
-          {lang === 'ko' ? '차디찬 런던의 세계관' : 'The Cold Laws of Sevenoaks & Mayfair'}
+          {lang === 'ko' ? '세계관' : 'The Cold Laws of Sevenoaks & Mayfair'}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -186,7 +186,7 @@ export default function App() {
         </div>
 
         <h2 className="font-serif text-3xl md:text-4xl text-brand-cream font-light mb-8">
-          {lang === 'ko' ? '분쟁과 기록의 주요 공간' : 'The Estates & Geographic Anchors'}
+          {lang === 'ko' ? '주요 공간' : 'The Estates & Geographic Anchors'}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -240,7 +240,7 @@ export default function App() {
         </div>
 
         <h2 className="font-serif text-3xl md:text-4xl text-brand-cream font-light mb-8">
-          {lang === 'ko' ? '상류 사회 가문도 및 인물 비밀' : 'Tensions and Dynastic Dossiers'}
+          {lang === 'ko' ? '메인 캐릭터' : 'Tensions and Dynastic Dossiers'}
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
