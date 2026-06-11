@@ -291,7 +291,7 @@ export default function App() {
                     {lang === 'ko' ? 'Langley 가문 (몰락)' : 'House Langley'}
                   </div>
                   <div className="col-span-6 font-serif text-xs text-brand-muted italic">
-                    {lang === 'ko' ? '전 상류 사회 전문직. 2016년 파산 법제 조치 이후 영구 몰락.' : 'Dispossessed core estate. Ruined systematically in 2016 foreclosure.'}
+                    {lang === 'ko' ? '구 귀족. 2016년 파산 법제 조치 이후 몰락.' : 'Old aristocratic lineage. Systematically ruined after the 2016 legal foreclosure.'}
                   </div>
                 </div>
 
