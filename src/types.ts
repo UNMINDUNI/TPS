@@ -9,14 +9,19 @@ export interface Character {
   appearance: string[];
   descKr: string;
   descEn: string;
-  secretKr: string;
-  secretEn: string;
   quoteKr: string;
   quoteEn: string;
+  frequentLocationsKr: string[];
+  frequentLocationsEn: string[];
+  personalityKr: string;
+  personalityEn: string;
+  speechToneKr: string; // 캐릭터말투
+  speechToneEn: string;
   relationNotes: { [targetId: string]: string }; // relational text (Kr)
   relationNotesEn: { [targetId: string]: string }; // relational text (En)
   accentColor: string;
   avatarBg: string;
+  image?: string;
 }
 
 export interface LocationInfo {
@@ -29,7 +34,6 @@ export interface LocationInfo {
   descEn: string;
   visitors: string[]; // Character IDs
   icon: string;
-  clueId?: string; // Clue that can be found here
 }
 
 export interface TimelineEvent {
@@ -45,26 +49,14 @@ export interface TimelineEvent {
   type: 'key' | 'loss' | 'normal';
 }
 
-export interface Clue {
+export interface Npc {
   id: string;
-  nameKr: string;
-  nameEn: string;
-  foundAt: string; // Location ID
-  inspectTextKr: string;
-  inspectTextEn: string;
-  targetAxis: string; // ID of the Narrative Axis it helps
-  unlockedStoryKr: string;
-  unlockedStoryEn: string;
-  discovered: boolean;
-}
-
-export interface NarrativeAxis {
-  id: string;
-  titleKr: string;
-  titleEn: string;
+  name: string;
+  statusKr: string;
+  statusEn: string;
   descKr: string;
   descEn: string;
-  tensionLabelKr: string;
-  tensionLabelEn: string;
-  currentStrength: number; // 0 to 100
+  symbol: string;
 }
+
+
