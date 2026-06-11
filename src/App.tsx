@@ -451,7 +451,7 @@ export default function App() {
               {/* Backing relation notes context to show how this selected user feels about others */}
               <div className="mt-6 pt-4 border-t border-brand-border/60">
                 <span className="text-[8px] font-mono text-brand-gold tracking-widest uppercase block mb-2">
-                  {lang === 'ko' ? '● 당신(몰락 가주)과의 직접적 긴장 관계' : '● HOSTILITY METRIC TO YOU'}
+                  {lang === 'ko' ? '● 당신과의 직접적 긴장 관계' : '● HOSTILITY METRIC TO YOU'}
                 </span>
                 <p className="text-xs font-serif text-brand-muted italic leading-relaxed">
                   {lang === 'ko' ? selectedChar.relationNotes.user : selectedChar.relationNotesEn.user}
