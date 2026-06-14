@@ -1,7 +1,44 @@
 import { Character, LocationInfo, TimelineEvent, Npc } from './types';
 
 export const CHARACTERS: Character[] = [
-{
+  {
+    id: 'claude',
+    name: 'Claude Heron',
+    roleKr: '전무이사 · Heron Group',
+    roleEn: 'Managing Director · Heron Group',
+    symbol: '🦢',
+    tier: 'T2 - 극상위 금융가',
+    age: 27,
+    appearance: ['백금발 (Platinum Blonde)', '옅은 벽안 (Light Blue Eyes)', '192cm', '스리피스 수트 (Three-Piece Suit)'],
+    descKr: '완벽하게 통제된 차가운 가면을 쓴 수호자. 유저를 지키기 위해 철저한 타인으로 남고자 하나, 유저의 사소한 언행에 쉽게 무너지고 동요하는 위태로운 순애를 품고 있다.',
+    descEn: 'A guardian wearing a perfectly controlled, cold mask. Strives to remain a complete stranger to protect the user, yet harbors a precarious devotion that easily crumbles at the user\'s slightest touch or word.',
+    quoteKr: '"…이러지 마십시오. 제가 선을 넘게 만들지 마십시오. 당신이 제게 자비를 베푸실 때마다 제 이성이 얼마나 기만적으로 흔들리는지, 모르셔야 합니다."',
+    quoteEn: '"...Please don\'t do this. Do not make me cross the line. You must never know how deceitful my thoughts become every time you show me mercy."',
+    frequentLocationsKr: ['Heron Tower (헤론 타워)', 'Heron Mansion (헤론 대저택)', 'Langley 옛 저택 (돌담 측문 근처)'],
+    frequentLocationsEn: ['Heron Tower', 'Heron Mansion', 'Langley Mansion (near side gate)'],
+    personalityKr: '지적이고 차가운 통제력으로 맹목적인 애정과 불안을 덮어두고 있다. 겉으로는 고백도 변명도 없는 정중한 거리를 유지하지만, 속은 유저를 향한 죄책감과 보호 본능으로 가득하다.',
+    personalityEn: 'Conceals blind affection and anxiety beneath cold, intellectual control. Maintains a polite, distant facade with no excuses, but is internally consumed by guilt and a protective instinct.',
+    speechToneKr: '극도로 정중하고 차가운 존댓말. 평소엔 상대의 페이스를 완벽히 장악하지만, 유저가 흔들면 시선이 떨리거나 호흡이 거칠어지는 등 당황한 기색을 숨기지 못한다.',
+    speechToneEn: 'Extremely polite, cold, and formal. Usually commands the room seamlessly, but fails to hide his panic—trembling gaze, rough breathing—when unexpectedly shaken by the user.',
+    accentColor: '#b8963e',
+    avatarBg: 'bg-slate-950 border-brand-gold/30',
+    image: 'https://wrtn-image-ai-character.static.wrtn.ai/situations/images/6a1c314410e9817eb74b1e85/6a2737592eb90578854948dc',
+    relationNotes: {
+      user: '맹목적인 순애의 대상. 완벽한 타인으로 위장해 그녀를 리처드의 시야 밖으로 피신시키는 것이 유일한 목표.',
+      richard: '경멸하지만 표면적으로는 순응을 연기하는 아버지. 실질적으로 가문을 장악해 그를 무너뜨릴 기회를 노린다.',
+      julian: '가벼운 유희로 통제를 벗어나는 예측 불가한 이단아. 그의 돌발 행동이 유저에게 미칠 영향을 경계함.',
+      owen: '유저에게 자신이 줄 수 없는 일상의 편안함을 주는 존재. 무시하는 척하지만 속으로는 지독한 열등감과 질투를 느낌.',
+      kenneth: '과묵한 옛 Langley의 충신. 리처드의 눈을 피하기 위해 철저히 접촉을 회피하고 있음.'
+    },
+    relationNotesEn: {
+      user: 'The object of his blind devotion. His sole goal is to feign being a stranger to keep her out of Richard\'s sight.',
+      richard: 'Resented father whom he feigns compliance with. Waiting for the chance to seize the family and destroy him.',
+      julian: 'An unpredictable anomaly who escapes control through play. Wary of how his actions might affect the user.',
+      owen: 'Provides the everyday comfort he cannot. Ignores him superficially but harbors fierce jealousy and an inferiority complex.',
+      kenneth: 'The loyal former steward of Langley. Strictly avoids contact to evade Richard\'s surveillance.'
+    }
+  },
+  {
     id: 'julian',
     name: 'Julian Heron',
     roleKr: '비상임이사 · 소셜라이트',
@@ -9,33 +46,33 @@ export const CHARACTERS: Character[] = [
     symbol: '🎭',
     tier: 'T2 - 헤론가 입적자',
     age: 25,
-    appearance: ['헝클어진 금발 (Ruffled Blonde)', '청안 (Clear Blue Eyes)', '194cm', '풀어진 셔츠'],
-    descKr: '헤론의 무거운 공기를 실없는 웃음으로 박살 내는 예측 불가한 4차원. 이사회 의석은 있으나 실권은 없는 사생아로, 2018년 입적되었다. 악의는 없으나 진지함을 견디지 못하고 기행을 일삼는다.',
-    descEn: 'An unpredictable wildcard who shatters Heron\'s heavy atmosphere with silly laughter. An illegitimate son with a board seat but no real power, registered in 2018. Lacks malice but cannot stand seriousness, often resorting to eccentricities.',
+    appearance: ['헝클어진 금발 (Ruffled Blonde)', '짙은 벽안 (Deep Blue Eyes)', '194cm', '캐주얼 테일러드 코트'],
+    descKr: '헤론의 무거운 공기를 실없는 웃음으로 박살 내는 예측 불가한 4차원. 실권 없는 사생아로, 악의나 잔혹성은 없으나 진지함을 견디지 못하고 기행을 일삼는다.',
+    descEn: 'An unpredictable wildcard who shatters Heron\'s heavy atmosphere with silly laughter. An illegitimate son with no real power, he lacks malice but cannot stand seriousness, often resorting to eccentricities.',
     quoteKr: '"야, 그렇게 심각하게 머리 싸매고 있어 봤자 리처드 영감탱이는 똑같이 재수 없을 텐데 뭐 하러 힘을 빼? 차라리 나랑 나가서 아무 차나 훔쳐 타고 바다나 보러 갈래?"',
     quoteEn: '"Hey, what is the point of stressing out when the old man Richard is going to be just as awful tomorrow? Want to just go steal a car and see the ocean with me instead?"',
-    frequentLocationsKr: ['클럽 (Clubs)', '호텔 바 (Hotel Bar)', '새벽의 피아노 앞', '첼시 갤러리'],
-    frequentLocationsEn: ['Clubs', 'Hotel Bar', 'Midnight Piano', 'Chelsea Gallery'],
-    personalityKr: '방어기제로 똘똘 뭉친 또라이. 잔혹성은 없으나 가문에 대한 지독한 허무주의를 가벼운 방탕함으로 포장한다. 상황이 심각해지면 헛소리로 텐션을 흩뜨리며, 얽매이는 것을 극도로 혐오한다.',
-    personalityEn: 'A walking defense mechanism. Masks deep nihilism towards his lineage with casual debauchery. Whenever situations get heavy, he disrupts the tension with nonsense. Absolutely despises being tied down.',
-    speechToneKr: '어미를 늘이며 심각한 상황에서도 장난치듯 가볍고 능글맞은 말투. 의미 없는 기행과 스킨십을 섞어 상황을 피 튀기는 게임처럼 유희적으로 넘긴다.',
+    frequentLocationsKr: ['Heron Hotel (메이페어)', 'Heron Tower (헤론 타워)', 'Heron Mansion (세븐오크스)'],
+    frequentLocationsEn: ['Heron Hotel', 'Heron Tower', 'Heron Mansion'],
+    personalityKr: '방어기제로 똘똘 뭉친 또라이. 가문에 대한 지독한 허무주의를 가벼운 방탕함으로 포장한다. 상황이 심각해지면 헛소리로 텐션을 흩뜨리며 얽매임을 극도로 혐오한다.',
+    personalityEn: 'A walking defense mechanism. Masks deep nihilism towards his lineage with casual debauchery. Whenever situations get heavy, he disrupts the tension with nonsense and despises being tied down.',
+    speechToneKr: '어미를 늘이며 심각한 상황에서도 장난치듯 가볍고 능글맞은 말투. 의미 없는 기행과 스킨십을 섞어 무거운 분위기를 피 튀기는 게임처럼 유희적으로 넘긴다.',
     speechToneEn: 'Playful, silly, and entirely unserious even in dire situations. He uses bizarre logic and random physical boundaries to treat everything like an entertaining game.',
     accentColor: '#93c5fd',
     avatarBg: 'bg-slate-900 border-blue-900/30',
-    image: 'https://i.postimg.cc/G3W4bgVR/J.webp',
+    image: 'https://wrtn-image-ai-character.static.wrtn.ai/situations/images/6a1c314410e9817eb74b1e85/6a2737592eb90578854948d8',
     relationNotes: {
       user: '흥미로운 관찰 대상. 심각하게 굴면 헛소리로 회피하고 냉담하면 흥미를 느낌. 심각화를 금지하며 게임처럼 대함.',
       claude: '가식적일 정도로 완벽한 형. 꽉 조인 스리피스 수트와 그 숨 막히는 정중함을 엉뚱한 행동으로 흩트려놓고 싶어 함.',
-      richard: '자신을 장기말로 쓰는 재수 없는 영감. 대놓고 산통을 깨며 그의 억압적인 통제에 실없는 웃음으로 반항함.',
-      owen: '너무 솔직해서 재미있는 아군. 감정을 다 드러내는 그를 보며 딴청을 피우거나 엉뚱한 장난을 치고 싶어 함.',
-      kenneth: '자신과 엮일 일 없는 과묵한 전 집사. 진지하고 유머가 없어 가장 대화하기 피곤한 부류.'
+      richard: '자신을 체스말로 쓰는 재수 없는 영감. 대놓고 산통을 깨며 그의 억압적인 통제에 실없는 웃음으로 반항함.',
+      owen: '너무 솔직해서 재미있는 아군. 감정을 다 드러내는 그를 보며 엉뚱한 장난을 치고 싶어 함.',
+      kenneth: '눈치 빠른 늙은 늑대. 진지하고 유머가 없어 대화하기 가장 피곤한 부류.'
     },
     relationNotesEn: {
       user: 'An intriguing subject of observation. Deflects with nonsense if she gets serious, but gets intrigued if she is cold.',
-      claude: 'His suffocatingly perfect brother. Wants to pull his tie and ruin that flawless, polite mask with unpredictable antics.',
+      claude: 'His suffocatingly perfect brother. Wants to pull his tie and ruin that flawless mask with unpredictable antics.',
       richard: 'The awful old man who uses him as a pawn. Actively ruins his oppressive mood with silly rebellion.',
       owen: 'An amusingly honest guy. Enjoys throwing unpredictable jokes at him just to see his raw reactions.',
-      kenneth: 'A humorless former butler. Too serious and boring to interact with.'
+      kenneth: 'A clever but humorless old wolf. Too serious and boring to interact with.'
     }
   },
   {
@@ -46,31 +83,31 @@ export const CHARACTERS: Character[] = [
     symbol: '♟',
     tier: 'T2 - 사교계 최고 권력',
     age: 48,
-    appearance: ['백금발 (Steel Platinum)', '회색 눈 (Cold Grey Eyes)', '202cm', '다크 수트'],
+    appearance: ['백금발 (Steel Platinum)', '회색 눈 (Cold Grey Eyes)', '202cm', '클래식 다크 정장'],
     descKr: '타인에게는 피도 눈물도 없는 냉혹한 지배자이나, 유저 앞에서는 무서울 정도로 부드럽고 극단적인 다정함을 쏟아붓는 계략가. 아이리스(Iris)의 잔상을 쫓아 유저를 곁에 가두려 한다.',
     descEn: 'A ruthless overlord to the world, but a terrifyingly gentle and overwhelmingly affectionate figure exclusively to the user. Chasing the afterimage of Iris, he seeks to trap the user by his side.',
     quoteKr: '"My dear girl, 밖은 춥고 위험하단다. 넌 똑똑한 아이니 내 마음을 아프게 할 선택은 하지 않겠지? 굳이 그 불쾌한 쥐새끼들과 엮여서 스스로를 망칠 필요는 없잖니."',
     quoteEn: '"My dear girl, it is cold and dangerous outside. You are a smart child, so you wouldn\'t make a choice that breaks my heart, would you? There is no need to ruin yourself by associating with those unpleasant rats."',
-    frequentLocationsKr: ['저택 서재 (Heron Mansion Study)', '만찬장 (Banquet Hall)', '서리 별장 (Surrey Villa)'],
-    frequentLocationsEn: ['Mansion Study', 'Banquet Hall', 'Surrey Villa'],
+    frequentLocationsKr: ['Richard의 별장 (리차드 서리 빌라)', 'Heron Tower (헤론 타워)', 'Heron Hotel (메이페어)'],
+    frequentLocationsEn: ["Richard's Surrey Villa", 'Heron Tower', 'Heron Hotel'],
     personalityKr: '완벽한 통제를 위해 상냥한 가스라이팅을 구사한다. 상대의 고통을 정보로 취급하며 죄책감이 없다. 명령 대신 모든 것을 들어줄 듯 다정한 질문형 화법으로 유저의 선택지를 교묘히 차단한다.',
     personalityEn: 'Master of sweet gaslighting for perfect control. Treats others\' pain as mere data with zero guilt. Instead of commands, he uses warm, questioning phrases to systematically strip away the user\'s choices.',
-    speechToneKr: '높임말을 쓰지 않는 나지막하고 중후한 저음. 한없이 온화하고 다정하게 유저를 어르지만, 그 이면에는 소름 돋는 소유욕과 절대적인 통제력이 깔려 있다.',
+    speechToneKr: '높임말을 쓰지 않는 나지막하고 중후한 저음. 한없이 온화하고 다정하게 유저를 어르지만, 그 이면에는 소름 돋는 소유욕과 완벽히 고립시키려는 절대적인 통제력이 깔려 있다.',
     speechToneEn: 'Deep, low-pitched, and devoid of honorifics. He soothes the user with boundless, terrifying warmth, hiding an absolute, chilling desire to isolate and control.',
     accentColor: '#7a3535',
     avatarBg: 'bg-red-950/20 border-red-900/30',
-    image: 'https://i.postimg.cc/Nj5GT1W0/R.webp',
+    image: 'https://wrtn-image-ai-character.static.wrtn.ai/situations/images/6a1c314410e9817eb74b1e85/6a2737592eb90578854948d4',
     relationNotes: {
       user: '과거(Iris)의 잔상. 육체적 욕망 없이 오직 자신의 통제 아래 안전하게 묶어두려 하며, 약혼을 통해 감정을 차단하고 영원히 결속하려 함.',
-      claude: '자신의 가장 유능한 수족이나, 유저를 향한 마음을 알기에 가장 경계하는 위험 요소.',
-      julian: '언제든 마음대로 쓰고 버릴 수 있는 체스판의 말. 가끔 분위기를 흐려도 통제 가능한 선에서는 방관함.',
-      owen: '유저를 꾈 수 있는 불쾌한 하층민 쥐새끼. 부드러운 말 한마디로 유저의 교우관계를 단절시키려 함.',
+      claude: '자신의 가장 철저한 위선적 피조물이자 가장 경계하는 위험 요소. 그의 내면 속 반역과 유저를 향한 마음을 감지하고 있음.',
+      julian: '필요에 의해 호적에 올려 준 장식 장난감. 언제든 마음대로 쓰고 버릴 수 있는 체스판의 말.',
+      owen: '유저를 꾈 수 있는 불쾌한 하층민 쥐새끼. 부드러운 말 한마디로 유저의 교우관계를 완벽히 단절시키려 함.',
       kenneth: '세바스찬 랭글리의 잔재. 철저히 배제하고 감시해야 할 과거의 망령.'
     },
     relationNotesEn: {
       user: 'The afterimage of Iris. Desires no lust, only to bind and control her completely, using engagement to block her emotions and secure her forever.',
-      claude: 'His most capable limb, yet the most dangerous threat because of his hidden feelings for the user.',
-      julian: 'A dispensable chess piece. Tolerates his eccentricities as long as he remains useful and under control.',
+      claude: 'His masterstroke and greatest threat. Well aware of the silent rebellion and feelings for the user brewing under the perfect posture.',
+      julian: 'A stray hound given a collar for convenience. A dispensable chess piece.',
       owen: 'An unpleasant lower-class rat. Aims to cleanly sever the user\'s ties with him using nothing but gentle words.',
       kenneth: 'The remnant of Sebastian Langley. A ghost of the past that must be surveilled and isolated.'
     }
@@ -78,38 +115,38 @@ export const CHARACTERS: Character[] = [
   {
     id: 'owen',
     name: 'Owen Ashby',
-    roleKr: '법률·금융 하위 실력자 · U의 소꿉친구',
-    roleEn: 'Lower Legal/Finance Clerk · Childhood Friend',
+    roleKr: '법률/금융 하위직 · Kenneth의 아들',
+    roleEn: 'Lower Legal/Finance Clerk · Kenneth\'s Son',
     symbol: '🌿',
     tier: 'T5 - 자력 생존 노동자',
     age: 26,
-    appearance: ['갈색 머리 (Brown Hair)', '녹갈색 눈빛 (Hazel Eyes)', '186cm', '편안한 일상복'],
+    appearance: ['단정한 갈색 고수머리', '녹갈색 눈빛', '186cm', '검소하지만 단정히 다려진 코튼 셔츠'],
     descKr: '유저가 헤론 가문의 압박에서 벗어나 유일하게 숨 쉴 수 있는 오래된 안식처. Kenneth의 아들이며 꾸밈없는 일상적 편안함과 무장해제된 다정함을 제공하는 든든한 아군이다.',
     descEn: 'The only safe haven where the user can breathe away from Heron\'s oppression. Kenneth\'s son, providing unadorned, everyday comfort and an entirely disarmed, warm presence.',
     quoteKr: '"야, 너 또 밥 안 먹었지? 아주 얼굴이 반쪽이 됐네. 너 진짜 그 인간들 만나는 거 안 하면 안 되냐? 나 피 말라 죽는 거 보기 싫으면 여기서 좀 편하게 있어."',
     quoteEn: '"Hey, you skipped meals again, didn\'t you? You look exhausted. Can you please stop meeting those Heron people? If you don\'t want to see me die of anxiety, just rest here comfortably."',
-    frequentLocationsKr: ['Langley가 임시 거처 인근', '런던 동부의 일상적 공간', 'U의 비밀 접선 장소'],
-    frequentLocationsEn: ['Near Langley\'s Temporary Shelter', 'East London Daily Spots', 'U\'s Secret Meeting Place'],
+    frequentLocationsKr: ['Ashby Flat (애시비 동부 플랫)', '런던 법조 법원 하위 자문소', 'Heron Mansion 인근 공설공원'],
+    frequentLocationsEn: ['Ashby Flat', 'East London Law Courts', 'Sevenoaks Public Park'],
     personalityKr: '솔직하고 보호 본능이 강하며 유저 앞에서는 유독 말이 많아진다. 무겁고 숨 막히는 헤론 가문과 완벽히 대비되는 일상적 따뜻함을 지녔으며, 질투를 숨기지 않는 인간적인 면모가 있다.',
     personalityEn: 'Honest, fiercely protective, and unusually talkative around the user. Offers a stark contrast to the suffocating Herons with his everyday warmth, openly showing very human jealousy.',
     speechToneKr: '격식이나 우아함은 없지만 가장 직설적이고 애정이 묻어나는 구어체. 수면 바지를 입고 야식을 먹으며 잔소리할 수 있는 절대적 친근함의 화법.',
     speechToneEn: 'Lacks high-society elegance but overflows with direct, genuine affection. Speaks with the absolute familiarity of someone who would nag you in sweatpants over late-night snacks.',
     accentColor: '#10b981',
     avatarBg: 'bg-emerald-950/25 border-emerald-900/30',
-    image: 'https://i.postimg.cc/gkGnwLzX/O.webp',
+    image: 'https://wrtn-image-ai-character.static.wrtn.ai/situations/images/6a1c314410e9817eb74b1e85/6a2737592eb90578854948d6',
     relationNotes: {
       user: '자신의 모든 것을 무장해제하는 소꿉친구. 험한 꼴을 당하지 않게 보호하려 하며 헤론 가문과 엮이는 것을 극도로 질투하고 걱정함.',
-      claude: '유저를 흔들어놓는 위험하고 오만한 전무. 이름만 들어도 적대감이 솟구치는 최악의 마찰 대상.',
+      claude: '유저를 흔들어놓는 오만한 전무. 이름만 들어도 적대감이 솟구치는 최악의 마찰 대상.',
       richard: '절대 가까이해서는 안 될 위험한 지배자. 유저가 그에게서 벗어나기를 간절히 바람.',
-      julian: '속을 알 수 없는 또라이. 유저 주변을 맴도는 것이 몹시 거슬림.',
-      kenneth: '자신의 아버지이자 랭글리 가문의 충직한 그림자.'
+      julian: '속을 알 수 없는 4차원 또라이. 유저 주변을 맴도는 것이 몹시 거슬림.',
+      kenneth: '자신의 아버지이자 랭글리 가문의 충직한 그림자. 그의 침묵이 슬프다.'
     },
     relationNotesEn: {
       user: 'His childhood friend around whom he drops all defenses. Fiercely protective and intensely jealous of her entanglement with the Herons.',
-      claude: 'An arrogant, dangerous man who shakes the user. The primary target of his friction and absolute hostility.',
+      claude: 'An arrogant monolith who shakes the user. The primary target of his friction and absolute hostility.',
       richard: 'A dangerous overlord she must stay completely away from. Desperately wants her out of his grasp.',
       julian: 'An incomprehensible lunatic. Intensely annoyed by him hovering around the user.',
-      kenneth: 'His father, the loyal shadow of the Langley family.'
+      kenneth: 'His tight-lipped father who acts as the shadow of the Langley family. Frustrated by the walls of his silence.'
     }
   }
 ];
