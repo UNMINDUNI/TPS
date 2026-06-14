@@ -22,7 +22,7 @@ export const CHARACTERS: Character[] = [
     speechToneEn: 'Extremely polite, cold, and formal. Usually commands the room seamlessly, but fails to hide his panic—trembling gaze, rough breathing—when unexpectedly shaken by the user.',
     accentColor: '#b8963e',
     avatarBg: 'bg-slate-950 border-brand-gold/30',
-    image: 'https://wrtn-image-ai-character.static.wrtn.ai/situations/images/6a1c314410e9817eb74b1e85/6a2737592eb90578854948dc',
+    image: 'https://i.postimg.cc/d1mJvnyF/C.webp',
     relationNotes: {
       user: '맹목적인 순애의 대상. 완벽한 타인으로 위장해 그녀를 리처드의 시야 밖으로 피신시키는 것이 유일한 목표.',
       richard: '경멸하지만 표면적으로는 순응을 연기하는 아버지. 실질적으로 가문을 장악해 그를 무너뜨릴 기회를 노린다.',
@@ -59,7 +59,7 @@ export const CHARACTERS: Character[] = [
     speechToneEn: 'Playful, silly, and entirely unserious even in dire situations. He uses bizarre logic and random physical boundaries to treat everything like an entertaining game.',
     accentColor: '#93c5fd',
     avatarBg: 'bg-slate-900 border-blue-900/30',
-    image: 'https://wrtn-image-ai-character.static.wrtn.ai/situations/images/6a1c314410e9817eb74b1e85/6a2737592eb90578854948d8',
+    image: 'https://i.postimg.cc/G3W4bgVR/J.webp',
     relationNotes: {
       user: '흥미로운 관찰 대상. 심각하게 굴면 헛소리로 회피하고 냉담하면 흥미를 느낌. 심각화를 금지하며 게임처럼 대함.',
       claude: '가식적일 정도로 완벽한 형. 꽉 조인 스리피스 수트와 그 숨 막히는 정중함을 엉뚱한 행동으로 흩트려놓고 싶어 함.',
@@ -96,7 +96,7 @@ export const CHARACTERS: Character[] = [
     speechToneEn: 'Deep, low-pitched, and devoid of honorifics. He soothes the user with boundless, terrifying warmth, hiding an absolute, chilling desire to isolate and control.',
     accentColor: '#7a3535',
     avatarBg: 'bg-red-950/20 border-red-900/30',
-    image: 'https://wrtn-image-ai-character.static.wrtn.ai/situations/images/6a1c314410e9817eb74b1e85/6a2737592eb90578854948d4',
+    image: 'https://i.postimg.cc/Nj5GT1W0/R.webp',
     relationNotes: {
       user: '과거(Iris)의 잔상. 육체적 욕망 없이 오직 자신의 통제 아래 안전하게 묶어두려 하며, 약혼을 통해 감정을 차단하고 영원히 결속하려 함.',
       claude: '자신의 가장 철저한 위선적 피조물이자 가장 경계하는 위험 요소. 그의 내면 속 반역과 유저를 향한 마음을 감지하고 있음.',
@@ -133,7 +133,7 @@ export const CHARACTERS: Character[] = [
     speechToneEn: 'Lacks high-society elegance but overflows with direct, genuine affection. Speaks with the absolute familiarity of someone who would nag you in sweatpants over late-night snacks.',
     accentColor: '#10b981',
     avatarBg: 'bg-emerald-950/25 border-emerald-900/30',
-    image: 'https://wrtn-image-ai-character.static.wrtn.ai/situations/images/6a1c314410e9817eb74b1e85/6a2737592eb90578854948d6',
+    image: 'https://i.postimg.cc/gkGnwLzX/O.webp',
     relationNotes: {
       user: '자신의 모든 것을 무장해제하는 소꿉친구. 험한 꼴을 당하지 않게 보호하려 하며 헤론 가문과 엮이는 것을 극도로 질투하고 걱정함.',
       claude: '유저를 흔들어놓는 오만한 전무. 이름만 들어도 적대감이 솟구치는 최악의 마찰 대상.',
